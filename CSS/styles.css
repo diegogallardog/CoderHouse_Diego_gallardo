@@ -1,0 +1,37 @@
+:root {
+  --primary-color: #003366;
+  --secondary-color: #005599;
+  --font-main: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  background-color: #f9f9f9;
+}
+
+/* Navbar */
+.logo-navbar {
+  width: 150px;
+}
+
+.navbar .nav-link.active {
+  font-weight: bold;
+  color: yellow !important;
+}
+
+/* Botones */
+.btn-beilus {
+  background-color: var(--primary-color);
+  color: #fff;
+  transition: 0.3s;
+}
+
+.btn-beilus:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Footer */
+footer {
+  font-size: 0.9rem;
+}
