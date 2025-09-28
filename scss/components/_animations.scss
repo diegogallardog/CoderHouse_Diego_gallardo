@@ -1,6 +1,0 @@
-.hero-image { animation: floaty 6s ease-in-out infinite; }
-@keyframes floaty { 0% {transform: translateY(0);} 50% {transform: translateY(-12px);} 100% {transform: translateY(0);} }
-.btn-beilus { background-color: #003366; color:#fff; font-weight:500; transition: background-color .3s ease, transform .2s ease; }
-.btn-beilus:hover { background-color:#00264d; transform: scale(1.05); }
-.service-card { transition: transform .3s ease, box-shadow .3s ease; }
-.service-card:hover { transform: translateY(-6px); box-shadow: 0 8px 20px rgba(0,0,0,.2); }

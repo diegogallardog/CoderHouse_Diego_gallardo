@@ -1,0 +1,14 @@
+$primary: #0d6efd;
+$dark: #212529;
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.logo-navbar { height: 40px; }
+
+.btn-beilus {
+  background-color: $primary;
+  color: white;
+  &:hover { transform: scale(1.05); }
+}
