@@ -1,9 +1,0 @@
-
-.logo-navbar { width: rem(150); }
-.navbar .nav-link {
-  &.active { font-weight: 700; color: $accent-color !important; }
-  position: relative;
-  &:after { content: ""; position: absolute; left: 0; bottom: -2px; width: 0; height: 2px;
-    background: $accent-color; transition: width .25s ease; }
-  &:hover:after { width: 100%; }
-}
