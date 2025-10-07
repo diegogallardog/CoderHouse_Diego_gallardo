@@ -1,45 +1,57 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Rastreo | Transporte Beilus</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="css/main.css">
-  </head>
-  <body>
-    <header class="bg-primary text-white">
-      <nav class="navbar navbar-expand-lg navbar-dark container">
-        <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="Logo" class="logo-navbar"/></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="menuNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
-            <li class="nav-item"><a href="servicios.html" class="nav-link">Servicios</a></li>
-            <li class="nav-item"><a href="tarifas.html" class="nav-link">Tarifas</a></li>
-            <li class="nav-item"><a href="rastreo.html" class="nav-link active">Rastreo</a></li>
-            <li class="nav-item"><a href="contacto.html" class="nav-link">Contacto</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Rastreo | Transporte Beilus C.A.</title>
+  
+  <meta name="description" content="Transporte Beilus C.A. — logística y transporte de carga en toda Venezuela.">
+  <meta name="keywords" content="transporte, logística, carga, envíos, Venezuela">
+  <meta name="author" content="Transporte Beilus C.A.">
+  <link rel="canonical" href="https://diegogallardog.github.io/CoderHouse_Diego_gallardo/">
 
-    <main class="container my-5 fade-in">
-      <h1 class="mb-4">Rastreo de Paquetes</h1>
-      <form class="shadow p-4 rounded bg-light">
-        <div class="mb-3">
-          <label for="codigo" class="form-label">Ingrese su código de rastreo:</label>
-          <input type="text" id="codigo" name="codigo" class="form-control" placeholder="Ej: BEILUS12345" required/>
-        </div>
-        <button type="submit" class="btn btn-beilus">Rastrear</button>
-      </form>
-    </main>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+  
+  <header class="bg-primary text-white">
+    <nav class="navbar navbar-expand-lg navbar-dark container" aria-label="Menú principal">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/logo.png" alt="Logo Transporte Beilus" class="logo-navbar"/>
+        <span class="visually-hidden">Inicio</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav" aria-controls="menuNav" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+          <li class="nav-item"><a href="servicios.html" class="nav-link">Servicios</a></li>
+          <li class="nav-item"><a href="tarifas.html" class="nav-link">Tarifas</a></li>
+          <li class="nav-item"><a href="rastreo.html" class="nav-link">Rastreo</a></li>
+          <li class="nav-item"><a href="contacto.html" class="nav-link">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-    <footer class="bg-dark text-white text-center py-3">
-      <p class="mb-0">© 2025 Transporte Beilus C.A. - Todos los derechos reservados</p>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+  <main class="container my-5">
+    <h1 class="mb-4">Rastreo de Paquetes</h1>
+    <form class="shadow p-4 rounded bg-light fade-in" action="#" method="get">
+      <div class="mb-3">
+        <label for="codigo" class="form-label">Ingrese su código de rastreo:</label>
+        <input type="text" id="codigo" name="codigo" class="form-control" placeholder="Ej: BEILUS12345" required aria-describedby="helpCodigo"/>
+        <div id="helpCodigo" class="form-text">El código se encuentra en tu comprobante de envío.</div>
+      </div>
+      <button type="submit" class="btn btn-beilus">Rastrear</button>
+    </form>
+  </main>
+  
+  <footer class="bg-dark text-white text-center py-3 mt-auto">
+    <p class="mb-0">© 2025 Transporte Beilus C.A. - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>

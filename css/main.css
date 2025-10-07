@@ -1,34 +1,24 @@
-body {
-  font-family: 'Roboto', sans-serif;
-}
 
-.logo-navbar { height: 40px; }
-
-.hero-image { max-width: 600px; }
-
-.btn-beilus {
-  background-color: #0d6efd;
-  color: #fff;
-  transition: transform 0.3s ease;
-}
-.btn-beilus:hover { transform: scale(1.05); }
-
-/* Animaciones */
-.fade-in { animation: fadeIn 1s ease-in; }
-.fade-in-delay { animation: fadeIn 1.5s ease-in; }
-.fade-in-delay2 { animation: fadeIn 2s ease-in; }
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-.floaty { animation: floaty 3s ease-in-out infinite; }
-
-@keyframes floaty {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-}
-
-.hover-card { transition: transform 0.3s ease; }
-.hover-card:hover { transform: scale(1.05); }
+:root{--primary:#0d6efd;--accent:#ffcc00;--text:#212529}
+*{box-sizing:border-box}
+body{font-family:Roboto,system-ui,-apple-system,Segoe UI,Arial,sans-serif;background:#f8fafc;color:var(--text)}
+.logo-navbar{height:48px}
+.navbar .nav-link{position:relative}
+.navbar .nav-link.active,.navbar .nav-link:hover{font-weight:600}
+footer{background:#111;color:#fff}
+.btn-beilus{background:var(--primary);color:#fff;border:none;border-radius:.8rem;padding:.6rem 1.2rem;transition:transform .2s ease,filter .2s ease}
+.btn-beilus:hover{transform:scale(1.05);filter:brightness(.92)}
+.btn-outline-beilus{background:transparent;color:var(--primary);border:2px solid var(--primary);border-radius:.8rem;padding:.6rem 1.2rem;transition:all .2s ease}
+.btn-outline-beilus:hover{background:var(--primary);color:#fff}
+.card-why{background:#fff;border-radius:1rem;box-shadow:0 10px 30px rgba(0,0,0,.06)}
+.service-card{border:none;border-radius:1rem;transition:transform .3s ease,box-shadow .3s ease}
+.service-card:hover{transform:translateY(-6px);box-shadow:0 10px 24px rgba(0,0,0,.15)}
+.hero-image{border-radius:1rem;box-shadow:0 10px 30px rgba(0,0,0,.08)}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+.floaty{animation:floaty 6s ease-in-out infinite}
+@keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.fade-in{animation:fadeIn .8s ease both}
+.fade-in-delay{animation:fadeIn 1.1s ease both}
+.fade-in-delay2{animation:fadeIn 1.4s ease both}
+.grid-tech{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.75rem}
+@media(max-width:576px){.grid-tech{grid-template-columns:1fr}}
