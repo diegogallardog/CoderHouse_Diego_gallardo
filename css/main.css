@@ -1,0 +1,109 @@
+header .navbar {
+  padding: 1rem 0;
+}
+header .navbar .logo-navbar {
+  width: 130px;
+  height: auto;
+}
+header .navbar .nav-link {
+  color: white !important;
+  font-weight: 500;
+  margin: 0 10px;
+}
+header .navbar .nav-link:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #000;
+  color: #f8f9fa;
+  text-align: center;
+  padding: 1rem 0;
+}
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.btn-primary,
+.btn-outline-primary {
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 0.8rem 1.8rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-align: center;
+}
+.btn-primary:hover,
+.btn-outline-primary:hover {
+  background-color: rgb(1.887704918, 93.4413934426, 228.412295082);
+  transform: translateY(-2px);
+}
+
+.card-why {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.fade-in {
+  animation: fadeIn 1.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+.hero h1 {
+  font-weight: 700;
+}
+.hero p {
+  font-size: 1.2rem;
+  color: #212529;
+}
+.hero .hero-image {
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 2s ease-in;
+}
+
+/* General */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 700;
+}
+
+/* Contenedor principal */
+.container {
+  padding: 2rem;
+}
+
+/*# sourceMappingURL=main.css.map */

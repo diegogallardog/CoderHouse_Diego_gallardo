@@ -1,0 +1,20 @@
+header {
+  .navbar {
+    padding: 1rem 0;
+
+    .logo-navbar {
+      width: 130px;
+      height: auto;
+    }
+
+    .nav-link {
+      color: white !important;
+      font-weight: 500;
+      margin: 0 10px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

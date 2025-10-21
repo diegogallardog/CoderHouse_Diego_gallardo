@@ -1,0 +1,35 @@
+@import "base/variables";
+@import "base/mixins";
+@import "layout/header";
+@import "layout/footer";
+@import "components/buttons";
+@import "components/cards";
+@import "components/animations";
+@import "pages/home";
+
+/* General */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 700;
+}
+
+/* Contenedor principal */
+.container {
+  padding: 2rem;
+}
